@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <label for="pwdLenght">Password's lenght: </label>
+        <input type="number" id="pwdLenght" max="20" min="4" value="4">
+        <label for="allChar">Include All:</label>
+        <input type="checkbox" id="allChar">
+        <label for="capitalLetters">Include Capital Letters:</label>
+        <input type="checkbox" id="capitalLetters">
+        <label for="lowerLetters">Include Lower Letters:</label>
+        <input type="checkbox" id="lowerLetters">
+        <label for="specialChar">Include Spacial Character:</label>
+        <input type="checkbox" id="specialChar">
+        <label for="numberField">Include Numeric Character:</label>
+        <input type="checkbox" id="numberField">
+        <button type="button" >Generate Password</button>
+        <p class="pwdField"></p>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>

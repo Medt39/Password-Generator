@@ -1,0 +1,74 @@
+:root{
+    --opacity:0;
+}
+body{
+    background: #151515;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    }
+main{
+    position: relative;
+    width: 600px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+p::selection{
+    color: white;
+    background:  rgb(88, 159, 16);
+}
+button{
+    all: unset;
+    width: 200px;
+    height: 40px;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: rgb(88, 159, 16);
+    color: white;
+    position: absolute;
+    top: 100px;
+    transform: translateX(-70%);
+}
+label,button,input{
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+label:nth-child(1),input[type='number']{
+    position: absolute;
+    bottom: 200px ;
+    font-size: 2rem;
+}
+input[type='number']{
+    bottom: 150px ;
+}
+button::after{
+    opacity: var(--opacity);
+    padding: 5px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    content: 'Check at least one box!!';
+    color:white;
+    font-size: 1rem;
+    height:auto;
+    text-align: center;
+    width: 100px;
+    background-color: #4b1515;
+    border-radius: 1rem;
+    transition: .5s;
+}
+p{
+    position: absolute;
+    top: 200%;
+    font-size: 4rem;
+}
